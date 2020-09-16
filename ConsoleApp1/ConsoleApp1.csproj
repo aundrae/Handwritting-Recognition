@@ -1,0 +1,259 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Google.Cloud.Vision.V1" Version="2.0.0" />
+    <PackageReference Include="IronOcr" Version="4.4.0" />
+    <PackageReference Include="RestSharp" Version="106.11.4" />
+    <PackageReference Include="System.Drawing.Common" Version="4.7.0" />
+    <PackageReference Include="System.Text.Encoding.CodePages" Version="4.7.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Parascript.FormXtra.CheckRecognition">
+      <HintPath>..\..\..\..\..\Program Files\Parascript\FormXtra SDK 7\Parascript.FormXtra.CheckRecognition.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Parascript.FormXtra.Classification">
+      <HintPath>..\..\..\..\..\Program Files\Parascript\FormXtra SDK 7\Parascript.FormXtra.Classification.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Parascript.FormXtra.Classification2">
+      <HintPath>..\..\..\..\..\Program Files\Parascript\FormXtra SDK 7\Parascript.FormXtra.Classification2.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Parascript.FormXtra.Classification2Core">
+      <HintPath>..\..\..\..\..\Program Files\Parascript\FormXtra SDK 7\Parascript.FormXtra.Classification2Core.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Parascript.FormXtra.ClassificationCore">
+      <HintPath>..\..\..\..\..\Program Files\Parascript\FormXtra SDK 7\Parascript.FormXtra.ClassificationCore.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Parascript.FormXtra.ClassificationUI">
+      <HintPath>..\..\..\..\..\Program Files\Parascript\FormXtra SDK 7\Parascript.FormXtra.ClassificationUI.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Parascript.FormXtra.CollaborationServiceLibrary">
+      <HintPath>..\..\..\..\..\Program Files\Parascript\FormXtra SDK 7\Parascript.FormXtra.CollaborationServiceLibrary.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Parascript.FormXtra.Core">
+      <HintPath>..\..\..\..\..\Program Files\Parascript\FormXtra SDK 7\Parascript.FormXtra.Core.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Parascript.FormXtra.Data">
+      <HintPath>..\..\..\..\..\Program Files\Parascript\FormXtra SDK 7\Parascript.FormXtra.Data.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Parascript.FormXtra.Database">
+      <HintPath>..\..\..\..\..\Program Files\Parascript\FormXtra SDK 7\Parascript.FormXtra.Database.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Parascript.FormXtra.Diagnostics">
+      <HintPath>..\..\..\..\..\Program Files\Parascript\FormXtra SDK 7\Parascript.FormXtra.Diagnostics.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Parascript.FormXtra.DiagnosticsUI">
+      <HintPath>..\..\..\..\..\Program Files\Parascript\FormXtra SDK 7\Parascript.FormXtra.DiagnosticsUI.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Parascript.FormXtra.DiskRepository">
+      <HintPath>..\..\..\..\..\Program Files\Parascript\FormXtra SDK 7\Parascript.FormXtra.DiskRepository.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Parascript.FormXtra.DocumentAnalysis">
+      <HintPath>..\..\..\..\..\Program Files\Parascript\FormXtra SDK 7\Parascript.FormXtra.DocumentAnalysis.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Parascript.FormXtra.DocumentAnalysisCore">
+      <HintPath>..\..\..\..\..\Program Files\Parascript\FormXtra SDK 7\Parascript.FormXtra.DocumentAnalysisCore.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Parascript.FormXtra.EnterpriseCore">
+      <HintPath>..\..\..\..\..\Program Files\Parascript\FormXtra SDK 7\Parascript.FormXtra.EnterpriseCore.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Parascript.FormXtra.FormDefinitionGenerator">
+      <HintPath>..\..\..\..\..\Program Files\Parascript\FormXtra SDK 7\Parascript.FormXtra.FormDefinitionGenerator.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Parascript.FormXtra.FormDefinitionLearning">
+      <HintPath>..\..\..\..\..\Program Files\Parascript\FormXtra SDK 7\Parascript.FormXtra.FormDefinitionLearning.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Parascript.FormXtra.FormProcessing">
+      <HintPath>..\..\..\..\..\Program Files\Parascript\FormXtra SDK 7\Parascript.FormXtra.FormProcessing.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Parascript.FormXtra.FormProcessingCore">
+      <HintPath>..\..\..\..\..\Program Files\Parascript\FormXtra SDK 7\Parascript.FormXtra.FormProcessingCore.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Parascript.FormXtra.FormProcessingUI">
+      <HintPath>..\..\..\..\..\Program Files\Parascript\FormXtra SDK 7\Parascript.FormXtra.FormProcessingUI.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Parascript.FormXtra.HCFA">
+      <HintPath>..\..\..\..\..\Program Files\Parascript\FormXtra SDK 7\Parascript.FormXtra.HCFA.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Parascript.FormXtra.Hwr">
+      <HintPath>..\..\..\..\..\Program Files\Parascript\FormXtra SDK 7\Parascript.FormXtra.Hwr.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Parascript.FormXtra.Imaging">
+      <HintPath>..\..\..\..\..\Program Files\Parascript\FormXtra SDK 7\Parascript.FormXtra.Imaging.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Parascript.FormXtra.Imaging.Pdf">
+      <HintPath>..\..\..\..\..\Program Files\Parascript\FormXtra SDK 7\Parascript.FormXtra.Imaging.Pdf.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Parascript.FormXtra.Imaging2">
+      <HintPath>..\..\..\..\..\Program Files\Parascript\FormXtra SDK 7\Parascript.FormXtra.Imaging2.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Parascript.FormXtra.ImagingCore">
+      <HintPath>..\..\..\..\..\Program Files\Parascript\FormXtra SDK 7\Parascript.FormXtra.ImagingCore.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Parascript.FormXtra.ImagingUI">
+      <HintPath>..\..\..\..\..\Program Files\Parascript\FormXtra SDK 7\Parascript.FormXtra.ImagingUI.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Parascript.FormXtra.Kofax.Workflow.Api">
+      <HintPath>..\..\..\..\..\Program Files\Parascript\FormXtra SDK 7\Parascript.FormXtra.Kofax.Workflow.Api.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Parascript.FormXtra.Kofax.Workflow.Base">
+      <HintPath>..\..\..\..\..\Program Files\Parascript\FormXtra SDK 7\Parascript.FormXtra.Kofax.Workflow.Base.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Parascript.FormXtra.Kofax.Workflow.Configuration">
+      <HintPath>..\..\..\..\..\Program Files\Parascript\FormXtra SDK 7\Parascript.FormXtra.Kofax.Workflow.Configuration.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Parascript.FormXtra.Kofax.Workflow.Factory">
+      <HintPath>..\..\..\..\..\Program Files\Parascript\FormXtra SDK 7\Parascript.FormXtra.Kofax.Workflow.Factory.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Parascript.FormXtra.Kofax.Workflow.FolderProcess">
+      <HintPath>..\..\..\..\..\Program Files\Parascript\FormXtra SDK 7\Parascript.FormXtra.Kofax.Workflow.FolderProcess.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Parascript.FormXtra.Licensing">
+      <HintPath>..\..\..\..\..\Program Files\Parascript\FormXtra SDK 7\Parascript.FormXtra.Licensing.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Parascript.FormXtra.LicensingCore">
+      <HintPath>..\..\..\..\..\Program Files\Parascript\FormXtra SDK 7\Parascript.FormXtra.LicensingCore.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Parascript.FormXtra.Mail">
+      <HintPath>..\..\..\..\..\Program Files\Parascript\FormXtra SDK 7\Parascript.FormXtra.Mail.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Parascript.FormXtra.PostalLabels">
+      <HintPath>..\..\..\..\..\Program Files\Parascript\FormXtra SDK 7\Parascript.FormXtra.PostalLabels.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Parascript.FormXtra.Prl">
+      <HintPath>..\..\..\..\..\Program Files\Parascript\FormXtra SDK 7\Parascript.FormXtra.Prl.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Parascript.FormXtra.PrlService">
+      <HintPath>..\..\..\..\..\Program Files\Parascript\FormXtra SDK 7\Parascript.FormXtra.PrlService.exe</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Parascript.FormXtra.ReceiptScripts">
+      <HintPath>..\..\..\..\..\Program Files\Parascript\FormXtra SDK 7\Parascript.FormXtra.ReceiptScripts.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Parascript.FormXtra.Recognition">
+      <HintPath>..\..\..\..\..\Program Files\Parascript\FormXtra SDK 7\Parascript.FormXtra.Recognition.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Parascript.FormXtra.Recognition.OCR">
+      <HintPath>..\..\..\..\..\Program Files\Parascript\FormXtra SDK 7\Parascript.FormXtra.Recognition.OCR.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Parascript.FormXtra.Recognition.OCR.CuneiForm">
+      <HintPath>..\..\..\..\..\Program Files\Parascript\FormXtra SDK 7\Parascript.FormXtra.Recognition.OCR.CuneiForm.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Parascript.FormXtra.Recognition.OCR.FineReader">
+      <HintPath>..\..\..\..\..\Program Files\Parascript\FormXtra SDK 7\Parascript.FormXtra.Recognition.OCR.FineReader.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Parascript.FormXtra.Recognition.OCR.FormXtraOCR">
+      <HintPath>..\..\..\..\..\Program Files\Parascript\FormXtra SDK 7\Parascript.FormXtra.Recognition.OCR.FormXtraOCR.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Parascript.FormXtra.Recognition.OCR.Tesseract">
+      <HintPath>..\..\..\..\..\Program Files\Parascript\FormXtra SDK 7\Parascript.FormXtra.Recognition.OCR.Tesseract.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Parascript.FormXtra.RecognitionCore">
+      <HintPath>..\..\..\..\..\Program Files\Parascript\FormXtra SDK 7\Parascript.FormXtra.RecognitionCore.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Parascript.FormXtra.RecognitionCore.OCR">
+      <HintPath>..\..\..\..\..\Program Files\Parascript\FormXtra SDK 7\Parascript.FormXtra.RecognitionCore.OCR.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Parascript.FormXtra.RecoProxies">
+      <HintPath>..\..\..\..\..\Program Files\Parascript\FormXtra SDK 7\Parascript.FormXtra.RecoProxies.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Parascript.FormXtra.RegistrationClusters">
+      <HintPath>..\..\..\..\..\Program Files\Parascript\FormXtra SDK 7\Parascript.FormXtra.RegistrationClusters.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Parascript.FormXtra.ScriptingDebug">
+      <HintPath>..\..\..\..\..\Program Files\Parascript\FormXtra SDK 7\Parascript.FormXtra.ScriptingDebug.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Parascript.FormXtra.SignatureMatching">
+      <HintPath>..\..\..\..\..\Program Files\Parascript\FormXtra SDK 7\Parascript.FormXtra.SignatureMatching.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Parascript.FormXtra.Themes">
+      <HintPath>..\..\..\..\..\Program Files\Parascript\FormXtra SDK 7\Parascript.FormXtra.Themes.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Parascript.FormXtra.Unstructured">
+      <HintPath>..\..\..\..\..\Program Files\Parascript\FormXtra SDK 7\Parascript.FormXtra.Unstructured.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Parascript.FormXtra.Web">
+      <HintPath>..\..\..\..\..\Program Files\Parascript\FormXtra SDK 7\Parascript.FormXtra.Web.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Parascript.FormXtra.Windows">
+      <HintPath>..\..\..\..\..\Program Files\Parascript\FormXtra SDK 7\Parascript.FormXtra.Windows.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>

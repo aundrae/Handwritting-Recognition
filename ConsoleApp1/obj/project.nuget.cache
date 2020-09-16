@@ -1,0 +1,42 @@
+{
+  "version": 2,
+  "dgSpecHash": "9YE2Tb22G301r3yFVO5YvL/sqEWS27ty286QKrAc3vf84Y1bKOC4npIsUBdrFZBIvNFehpzs0I2Sv8daVQ+yoA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\JustinRamjattan\\Desktop\\Vidado & Google Handwriting Recognition\\ConsoleApp1\\ConsoleApp1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\JustinRamjattan\\.nuget\\packages\\google.api.commonprotos\\2.0.0\\google.api.commonprotos.2.0.0.nupkg.sha512",
+    "C:\\Users\\JustinRamjattan\\.nuget\\packages\\google.api.gax\\3.0.0\\google.api.gax.3.0.0.nupkg.sha512",
+    "C:\\Users\\JustinRamjattan\\.nuget\\packages\\google.api.gax.grpc\\3.0.0\\google.api.gax.grpc.3.0.0.nupkg.sha512",
+    "C:\\Users\\JustinRamjattan\\.nuget\\packages\\google.api.gax.grpc.grpccore\\3.0.0\\google.api.gax.grpc.grpccore.3.0.0.nupkg.sha512",
+    "C:\\Users\\JustinRamjattan\\.nuget\\packages\\google.apis\\1.44.1\\google.apis.1.44.1.nupkg.sha512",
+    "C:\\Users\\JustinRamjattan\\.nuget\\packages\\google.apis.auth\\1.44.1\\google.apis.auth.1.44.1.nupkg.sha512",
+    "C:\\Users\\JustinRamjattan\\.nuget\\packages\\google.apis.core\\1.44.1\\google.apis.core.1.44.1.nupkg.sha512",
+    "C:\\Users\\JustinRamjattan\\.nuget\\packages\\google.cloud.vision.v1\\2.0.0\\google.cloud.vision.v1.2.0.0.nupkg.sha512",
+    "C:\\Users\\JustinRamjattan\\.nuget\\packages\\google.longrunning\\2.0.0\\google.longrunning.2.0.0.nupkg.sha512",
+    "C:\\Users\\JustinRamjattan\\.nuget\\packages\\google.protobuf\\3.11.4\\google.protobuf.3.11.4.nupkg.sha512",
+    "C:\\Users\\JustinRamjattan\\.nuget\\packages\\grpc.auth\\2.27.0\\grpc.auth.2.27.0.nupkg.sha512",
+    "C:\\Users\\JustinRamjattan\\.nuget\\packages\\grpc.core\\2.27.0\\grpc.core.2.27.0.nupkg.sha512",
+    "C:\\Users\\JustinRamjattan\\.nuget\\packages\\grpc.core.api\\2.27.0\\grpc.core.api.2.27.0.nupkg.sha512",
+    "C:\\Users\\JustinRamjattan\\.nuget\\packages\\ironocr\\4.4.0\\ironocr.4.4.0.nupkg.sha512",
+    "C:\\Users\\JustinRamjattan\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.0.0\\microsoft.bcl.asyncinterfaces.1.0.0.nupkg.sha512",
+    "C:\\Users\\JustinRamjattan\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.1\\microsoft.netcore.platforms.3.1.1.nupkg.sha512",
+    "C:\\Users\\JustinRamjattan\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
+    "C:\\Users\\JustinRamjattan\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\JustinRamjattan\\.nuget\\packages\\restsharp\\106.11.4\\restsharp.106.11.4.nupkg.sha512",
+    "C:\\Users\\JustinRamjattan\\.nuget\\packages\\system.drawing.common\\4.7.0\\system.drawing.common.4.7.0.nupkg.sha512",
+    "C:\\Users\\JustinRamjattan\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
+    "C:\\Users\\JustinRamjattan\\.nuget\\packages\\system.text.encoding.codepages\\4.7.1\\system.text.encoding.codepages.4.7.1.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'IronOcr 4.4.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "libraryId": "IronOcr",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    }
+  ]
+}
